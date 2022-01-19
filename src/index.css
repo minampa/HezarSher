@@ -3,11 +3,27 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+  background-image: url('C:\ReactProjects\HezarSher\hezarsher\public\pictures\bg.png');
+  height: 100%;
+  width: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.fal {
+ background-color: rgb(241, 218, 113);
+ width: 20rem;
+ display: flex;
+
+}
+
+.fal-img {
+  width: 100%;
+  height: 100%;
 }

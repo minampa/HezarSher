@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import Fal from './components/Fal';
+const FAL_API = "https://ganjgah.ir/api/ganjoor/hafez/faal"
 
 function App() {
+  const [fal, setFal] = useState([]);
+
+  useEffect(() => {
+    fetch(FAL_API)
+    .then((res) => res.json())
+    .then ((data) => {
+      console.log(data);
+      setFal(data);
+    })
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Fal key={fal.id} {...fal}/>
+      
     </div>
   );
 }
