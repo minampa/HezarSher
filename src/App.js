@@ -11,7 +11,8 @@ function App() {
     .then((res) => res.json())
     .then ((data) => {
       console.log(data);
-      setFal(data);
+      // setFal(data);
+      document.getElementById("poemContainer").innerHTML=data.htmlText;
     })
   }, [])
 

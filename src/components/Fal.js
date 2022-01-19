@@ -6,7 +6,8 @@ const Fal= ({title, plainText, htmlText}) => (
         <div className='fal'>
             <div className='fal-info'>
                 <h3>{title}</h3>
-                <div>{plainText}</div>
+                {/* <div>{plainText}</div> */}
+                <div id="poemContainer"></div>
                 <div className='fal-tabir'>
                     ای صاحب فال به زودی خبر خوشی دریافت خواهی کرد. فقط جناب حافظ می‌فرمایند نماز اول وقت فراموش نشود :D
                 </div>
