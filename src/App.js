@@ -26,7 +26,7 @@ function App() {
       
       <Router>
         <div>
-          {/* <nav>
+          <nav>
             <ul>
               <li>
                 <Link to="/">صفحه اصلی</Link>
@@ -38,7 +38,7 @@ function App() {
                 <Link to="/ganjine">گنجینه</Link>
               </li>
             </ul>
-          </nav> */}
+          </nav>
 
           <Routes>
             <Route path="/" element= {<Main />} /> 
