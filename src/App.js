@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Fal from './components/Fal';
+import Main from './components/Main';
 const FAL_API = "https://ganjgah.ir/api/ganjoor/hafez/faal"
 
 function App() {
@@ -17,12 +18,10 @@ function App() {
     })
   }, [])
 
-  
-
   return (
     <div className="App">
-      <Fal key={fal.id} {...fal}/>
-      
+      {/* <Fal key={fal.id} {...fal}/> */}
+      <Main />
     </div>
   );
 }

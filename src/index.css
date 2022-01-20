@@ -5,9 +5,43 @@ body {
     sans-serif;
 }
 
+.main-container {
+  background-color: rgb(234, 255, 254);
+}
+
+.ganjoor-img{
+  display: flex;
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.main-text{
+  padding: 1rem;
+  margin: 1rem;
+  width: 30%;
+}
+
+.btn-main {
+  border-radius: 0.5rem;
+  background-color: rgb(241, 218, 113);
+  border: solid rgb(241, 218, 113);
+  font-weight: bold;
+  margin: 1rem;
+  padding: 0.3rem;
+}
+
 .container{
   background-image: url('C:\ReactProjects\HezarSher\hezarsher\public\pictures\bg.png');
-  height: 100%;
+  height: 50rem; 
   width: 100%;
 }
 
@@ -21,9 +55,11 @@ code {
  border-radius: 1rem;
  width: 30rem;
  display: flex;
- align-items: flex-start ;
+ /* align-items: flex-start ; */
+ 
  text-align: right;
  margin-left: 4rem;
+ 
 }
 
 .b{
