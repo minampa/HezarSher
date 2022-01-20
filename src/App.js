@@ -15,18 +15,10 @@ import {
 const FAL_API = "https://ganjgah.ir/api/ganjoor/hafez/faal"
 
 function App() {
-  const [Fal, setFal] = useState([]);
-  // const fal = useState([])
+  // const [fal, setFal] = useState([]);
+  const fal = useState([])
 
-  useEffect(() => {
-    fetch(FAL_API)
-    .then((res) => res.json())
-    .then ((data) => {
-      console.log(data);
-      setFal({title:data.title, plainText:data.plainText, htmlText:data.htmlText, recitations:data.recitations});
-      document.getElementById("poemContainer").innerHTML=data.htmlText;
-    })
-  }, [])
+  
 
   return (
     <div className="App">
@@ -52,7 +44,7 @@ function App() {
             <Route path="/" element= {<Main />} /> 
               
 
-            <Route path="/fal" element ={<Fal />} Fal={Fal}/>
+            <Route path="/fal" element ={<Fal />} />
 
             <Route path="/ganjine" element={<Ganjine />} />
 
