@@ -9,6 +9,11 @@ body {
   background-color: rgb(234, 255, 254);
 }
 
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .ganjoor-img{
   display: flex;
 }
@@ -40,7 +45,13 @@ body {
 }
 
 .container{
-  background-image: url('C:\ReactProjects\HezarSher\hezarsher\public\pictures\bg.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  /* background-position:center; */
+  background-repeat: no-repeat;
+  background-image: url('../public/pictures/bg.png');
   height: 50rem; 
   width: 100%;
 }

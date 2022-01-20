@@ -4,7 +4,7 @@ import Nav from './Nav';
 function Main() {
   return <div className='main-container'>
       <Nav />
-      <div >
+      <div className='main'>
           <img src='../../pictures/mainPagePicture.svg'></img>
             <div className='main-text'>
                 <p>
@@ -13,7 +13,7 @@ function Main() {
                 <div>
                   <button className='btn-main'>فال حافظ</button>
                   <button className='btn-main'>گنجینه اشعار</button>
-              </div>
+                </div>
             </div> 
             <div>
                 <img src='../../pictures/tarh1.svg'></img>
