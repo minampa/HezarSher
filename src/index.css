@@ -54,12 +54,18 @@ code {
   text-align: right;
 }
 
-#poemContainer {
+.poem {
   background-color: white;
   border-radius: 1rem;
   margin: 1rem;
   padding-right: 4rem;
   padding: 1rem;
+}
+
+.audio {
+  display: flex;
+  margin: auto;
+  padding-top: 1rem;
 }
 
 .fal-img {
