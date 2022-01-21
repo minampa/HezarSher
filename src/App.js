@@ -9,6 +9,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Random from './components/Random';
+import About from './components/About';
 
 
 
@@ -43,27 +45,17 @@ function App() {
           </nav>
 
           <Routes>
-            <Route path="/" element= {<Main />} /> 
-              
-
+            <Route path="/" element= {<Main />} />   
             <Route path="/fal" element ={<Fal />} />
-
             <Route path="/ganjine" element={<Ganjine />} />
-
+            <Route path="/random" element={<Random />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
       </Router>
       
     </div>
   );
-}
-
-
-
-
-
-function ganjine() {
-  return <Ganjine />
 }
 
 export default App;

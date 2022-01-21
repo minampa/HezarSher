@@ -5,7 +5,17 @@ import Shaer from './Shaer';
 function Ganjine() {
   
   const Poet_API = "https://ganjgah.ir/api/ganjoor/poets"
+  
+  // const [poets, setPoets] = useState([])
 
+  // useEffect(() => {
+  //   fetch(Poet_API)
+  //   .then((res) => res.json())
+  //   .then ((data) => {
+  //     console.log(data);
+  //     setPoets(poets.id);
+  //   })
+  // }, [])
 
   const [poets] = useState([
     {
