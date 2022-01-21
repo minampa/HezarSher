@@ -26,6 +26,7 @@ function Random({htmlText, title}) {
     })
   }, [])
   return <div>
+      <img src='../../pictures/gol4.svg' className='gol-image'/>
       <div className='fal'>
             <img src={src} />
             <div className='fal-info'>
@@ -35,7 +36,9 @@ function Random({htmlText, title}) {
                 </div> 
                     {/* <button className='btn' onClick={alpha} >رفرش</button> */}
             </div>
+            
         </div>
+        <img src='../../pictures/tarh4.svg' />
   </div>;
 }
 

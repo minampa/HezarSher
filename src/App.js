@@ -41,6 +41,12 @@ function App() {
               <li className='nav-list'>
                 <Link to="/ganjine">گنجینه</Link>
               </li>
+              <li className='nav-list'>
+                <Link to="/random">شعر رندم</Link>
+              </li>
+              <li className='nav-list'>
+                <Link to="/about">درباره‌ی پروژه</Link>
+              </li>
             </ul>
           </nav>
 
