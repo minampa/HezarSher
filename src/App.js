@@ -25,16 +25,18 @@ function App() {
       {/* <Main /> */}
       
       <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
+        <div className='nav-container' >
+          <nav className='nav' dir='rtl'> 
+            <img src='../../pictures/ganjoor.svg' className='ganjoor-img' dir='ltr'></img> 
+
+            <ul className='nav-bar'>
+              <li className='nav-list'>
                 <Link to="/">صفحه اصلی</Link>
               </li>
-              <li>
+              <li className='nav-list'>
                 <Link to="/fal">فال حافظ</Link>
               </li>
-              <li>
+              <li className='nav-list'>
                 <Link to="/ganjine">گنجینه</Link>
               </li>
             </ul>

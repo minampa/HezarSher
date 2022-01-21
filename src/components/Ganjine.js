@@ -89,11 +89,18 @@ function Ganjine() {
 
 
 
-  return <div className='poet-container'>
-    {poets.map(poets => (
-        <Shaer id={poets.id} />
-    ))}
+  return <div className='ganjine-container'>
+    <div className='ganijene-yellow'>
+
+    </div>
+    <div className='ganjine-blue'>
       
+    </div>
+    <div className='poet-container'>
+      {poets.map(poets => (
+          <Shaer id={poets.id} />
+      ))}
+    </div>
   </div>;
 }
 

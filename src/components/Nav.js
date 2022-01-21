@@ -3,7 +3,7 @@ import React from 'react';
 
 function Nav() {
   return <div className='nav'dir='rtl'>
-        <img src='../../pictures/ganjoor.svg' className='ganjoor-img'></img>
+        {/* <img src='../../pictures/ganjoor.svg' className='ganjoor-img'></img> */}
         {/* <ul className='nav-bar'>
             <li className='nav-list'>
                 <Link> فال حافظ </Link>
