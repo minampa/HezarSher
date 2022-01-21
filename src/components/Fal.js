@@ -49,8 +49,7 @@ const Fal= ({title, plainText, htmlText, recitations}) => {
 function alpha() {
     
 }
-
 function main() {
-    <Main />
+    return <Main />
 }
 export default Fal

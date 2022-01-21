@@ -5,12 +5,13 @@ const Poet_API = "https://ganjgah.ir/api/ganjoor/poet/"
 
 
 
-function Shaer({id, name}) {
+function Shaer({id}) {
     
     
     
   const [imgUrl, setImgUrl] = useState([]) 
   const [src, setSrc] = useState([]) 
+  const [name, setName] = useState([])
 
   useEffect(() => {
     fetch(Poet_API+id)
@@ -19,18 +20,17 @@ function Shaer({id, name}) {
       console.log(data);
       setImgUrl();
       setSrc("https://ganjgah.ir" + data.poet.imageUrl);
-      // console.log(data.poet)
+      setName(data.poet.name);
+      // console.log(data)
       // document.getElementById("poetImage").src = imgUrl;
     
     })
   }, [])
 
   return <div className='shaer'>
-    <div className='poet-image'>
+    <div>
       <img src= {src} alt={name}/>
-    </div>
-    <div className='poet-name'>
-      <h4>{name}</h4>
+      <h5>{name}</h5>
     </div>
   </div>;
 }
