@@ -89,7 +89,7 @@ function Ganjine() {
 
 
 
-  return <div>
+  return <div className='poet-container'>
     {poets.map(poets => (
         <Shaer id={poets.id} />
     ))}
