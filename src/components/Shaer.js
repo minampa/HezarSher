@@ -1,26 +1,20 @@
 import React, {useState, useEffect} from 'react';
 
 // const IMG_API = "https://ganjgah.ir/api/ganjoor/poem/10/images"
-const Poet_API = "https://ganjgah.ir/api/ganjoor/poem/random"
+const Poet_API = "https://ganjgah.ir/api/ganjoor/poets"
 
 
 
-function Shaer() {
-    const [Poet, setPoet] = useState([]);
+function Shaer({id, name, imageUrl}) {
+    
+    
+    
 
-    useEffect(() => {
-    fetch(Poet_API)
-    .then((res) => res.json())
-    .then ((data) => {
-      console.log(data);
-      // setFal(data);
-      setPoet(data);
-    })
-  }, [])
+    
 
-
-  return <div>
-
+  return <div className='shaer'>
+    <img src={imageUrl}></img>
+    <h4>{name}</h4>
   </div>;
 }
 

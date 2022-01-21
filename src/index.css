@@ -138,3 +138,10 @@ code {
   border: solid rgb(200, 226, 233);
 }
 
+.shaer {
+  background-color: yellowgreen;
+  width: 10rem;
+  height: 15rem;
+  border-radius: 1rem;
+  margin: 2rem;
+}
