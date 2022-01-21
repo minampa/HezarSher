@@ -27,7 +27,7 @@ function Shaer({id, name}) {
 
   return <div className='shaer'>
     <div className='poet-image'>
-      <img src= {src}/>
+      <img src= {src} alt={name}/>
     </div>
     <div className='poet-name'>
       <h4>{name}</h4>

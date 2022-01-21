@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { useEffect } from 'react';
+
 
 import Main from './Main';
 const FAL_API = "https://ganjgah.ir/api/ganjoor/hafez/faal"
@@ -36,8 +37,8 @@ const Fal= ({title, plainText, htmlText, recitations}) => {
                     <p>به زودی خبرهای خوشی دریافت خواهی کرد. هر کجا داخل شعر می و ساقی و مطرب و بوس و کنار و آغوش و... بود، منظور قرب وجودی به درگاه حق تعالی است! حرف هم نباشه. جناب حافظ می‌فرمایند نماز اول وقت هم فراموش نشود</p>
                 </div>
                 <div className='btn-fal'>
-                    <button className='btn' >بازگشت به صفحه اصلی</button>
-                    <button className='btn' >فال مجدد</button>
+                    <button className='btn' onClick={main}>بازگشت به صفحه اصلی</button>
+                    <button className='btn' onClick={alpha} >فال مجدد</button>
                 </div>
                 
             </div>
@@ -45,4 +46,11 @@ const Fal= ({title, plainText, htmlText, recitations}) => {
     </div> 
 )}
 
+function alpha() {
+    
+}
+
+function main() {
+    <Main />
+}
 export default Fal

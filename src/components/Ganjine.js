@@ -1,4 +1,5 @@
 import React, {useState,useEffect} from 'react';
+import Main from './Main';
 import Shaer from './Shaer';
 
 function Ganjine() {
@@ -10,7 +11,6 @@ function Ganjine() {
     {
       name: "اوحدی مراغه‌ای",
       id: 19,
-      img_src: ""
     },
     {
       name: "مولوی",
@@ -90,17 +90,20 @@ function Ganjine() {
 
 
   return <div className='ganjine-container'>
-    <div className='ganijene-yellow'>
-
+    <div className='bg-div'>
+      <div className='ganijene-yellow'>
+        <img src='../pictures/gol3.svg' />
+      </div>
+      <div className='ganjine-blue' >
+        
+      </div>
+      <div className='poet-container'>
+        {poets.map(poets => (
+            <Shaer id={poets.id} />
+        ))}
+      </div>
     </div>
-    <div className='ganjine-blue'>
-      
-    </div>
-    <div className='poet-container'>
-      {poets.map(poets => (
-          <Shaer id={poets.id} />
-      ))}
-    </div>
+    
   </div>;
 }
 
