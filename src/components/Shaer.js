@@ -27,12 +27,16 @@ function Shaer({id}) {
     })
   }, [])
 
-  return <div className='shaer'>
-    <div>
+  return <div className='shaer' >
+    <div onClick={callRandomPoem}>
       <img src= {src} alt={name}/>
       <h5>{name}</h5>
     </div>
   </div>;
+}
+
+function callRandomPoem() {
+  return(window.location.href='/random')
 }
 
 export default Shaer;

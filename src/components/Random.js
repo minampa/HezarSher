@@ -34,7 +34,7 @@ function Random({htmlText, title}) {
                 <div className='poem'>
                     <div id="randomPoem" dir='rtl'></div>
                 </div> 
-                    {/* <button className='btn' onClick={alpha} >رفرش</button> */}
+                    <button className='btn' onClick={event =>  window.location.href='/random'} >رفرش</button>
             </div>
             
         </div>
